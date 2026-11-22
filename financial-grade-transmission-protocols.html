@@ -41,14 +41,37 @@
     .footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 0.8rem; font-weight: 800; }
     .footer-links a { color: var(--ink-black) !important; }
   </style>
+<link href="masthead.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="ink-header">
-<div class="header-inner">
-<a class="brand-title" href="index.html">MESL CLOUD机场</a>
-<a href="chronicles.html" style="font-family:var(--ink-font);">← 返回观澜文萃专栏</a>
+<nav class="ink-masthead">
+<div class="ink-nav-frame">
+<a aria-label="MESL Cloud机场选购指南首页" class="ink-emblem-wrap" href="index.html">
+<svg aria-label="MESL Cloud机场徽标" class="ink-logo-svg" fill="none" role="img" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#1C242B" height="100" rx="4" width="100"></rect>
+<path d="M0 76Q25 64 50 70T100 68V100H0Z" fill="#2E5B53" opacity="0.55"></path>
+<polyline fill="none" points="20,74 20,30 50,58 80,30 80,74" stroke="#EAE5D9" stroke-linejoin="round" stroke-width="8"></polyline>
+<path d="M12 88Q28 82 44 88T76 88T96 86" opacity="0.85" stroke="#EAE5D9" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="50" cy="19" fill="#C0392B" r="7"></circle>
+</svg>
+<div class="ink-title-block">
+<span class="ink-brand-zh">MESL Cloud机场</span>
+<span class="ink-brand-en">选购与自测指南</span>
 </div>
-</header>
+</a>
+<div class="ink-nav-toc">
+<a href="index.html#plans">行情三选</a>
+<a href="index.html#media">影音邮件</a>
+<a href="index.html#strength">行前四事</a>
+<a href="index.html#faq">答客问</a>
+<a href="chronicles.html">观澜文萃</a>
+</div>
+<a class="ink-cta-seal" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow sponsored noopener" target="_blank">
+<span>注册选购</span>
+</a>
+</div>
+</nav>
+<p class="back-row" style="max-width:900px;margin:1.2rem auto 0;padding:0 1.2rem;font-family:var(--ink-font);font-weight:700"><a href="chronicles.html" >← 返回观澜文萃专栏</a></p>
 <main class="article-container">
 <article class="article-card"><h1>timeout、EOF和TLS握手失败有什么区别：按连接阶段读懂错误</h1><div data-swc-article-body="2026-11-16"><p>同一个程序今天提示超时，明天提示连接结束，换个网络又出现TLS握手失败，很容易让人误以为这些都是“节点坏了”的不同写法。实际上，错误可能发生在不同阶段。把报错放回连接过程，才能决定该查本地网络、目标服务、证书，还是应用自己的设置，而不是反复换工具碰运气。</p>
 <h2>先画出一次请求的四个阶段</h2>

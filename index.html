@@ -525,7 +525,6 @@
       .ink-nav-frame { flex-wrap: wrap; gap: 0.75rem 0.5rem; }
       .ink-emblem-wrap { order: 1; }
       .ink-cta-seal { order: 2; padding: 0.3rem 0.7rem; font-size: 0.78rem; min-height: 34px; }
-      .ink-nav-toc { display: none !important; }
       .ink-hero { padding-top: 1.5rem; }
       .ink-nav-toc {
         order: 3;
@@ -554,19 +553,32 @@
       .ink-hero-actions { flex-direction: column; align-items: stretch; }
       .ink-btn-dark, .ink-btn-seo { width: 100%; text-align: center; }
     }
+  
+    /* conversion-revision-2026-11-22 */
+    .ink-price-card { display: flex; flex-direction: column; }
+    .ink-price-card .ink-tier-specs { flex: 1; }
+    .ink-card-btn { margin-top: 1.3rem; width: 100%; text-align: center; }
+    .ink-nav-toc a { white-space: nowrap; }
+  
+    /* market-price cards (2026-11-22) */
+    .ink-mk-chip { align-self: flex-start; display: inline-block; font-family: var(--ink-font); font-size: 0.74rem; color: var(--ink-vermilion); border: 1px dashed var(--ink-vermilion); padding: 0.1rem 0.6rem; margin-bottom: 0.8rem; letter-spacing: 0.05em; }
+    .ink-mk-price { font-family: var(--ink-font); font-size: 2rem; font-weight: 900; color: var(--ink-black); margin: 0.3rem 0 0.8rem; line-height: 1.15; }
+    .ink-mk-price small { font-size: 0.8rem; font-weight: 500; color: var(--ink-muted); }
+    .ink-mk-source { font-size: 0.78rem; margin-top: 0.8rem; line-height: 1.6; }
+      .ink-mk-orig { display: block; font-family: var(--ink-sans); font-size: 0.76rem; font-weight: 400; color: var(--ink-muted); margin-top: 0.3rem; line-height: 1.5; }
+    .ink-mk-price small:first-child { font-size: 0.9rem; }
   </style>
 <style id="anchor-clearance">#plans{scroll-margin-top:120px;}@media(max-width:768px){#plans{scroll-margin-top:20px;}}</style></head>
 <body>
 <nav class="ink-masthead">
 <div class="ink-nav-frame">
 <a aria-label="MESL Cloud机场选购指南首页" class="ink-emblem-wrap" href="index.html">
-<svg class="ink-logo-svg" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg aria-label="MESL Cloud机场徽标" class="ink-logo-svg" fill="none" role="img" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 <rect fill="#1C242B" height="100" rx="4" width="100"></rect>
-<polygon fill="#2E5B53" opacity="0.85" points="10,82 35,42 55,75"></polygon>
-<polygon fill="#EAE5D9" points="32,82 60,30 88,82"></polygon>
-<polygon fill="#3A4750" opacity="0.9" points="52,82 72,50 92,82"></polygon>
-<rect fill="none" height="18" stroke="#C0392B" stroke-width="2" width="18" x="70" y="16"></rect>
-<text fill="#C0392B" font-family="serif" font-size="10" font-weight="900" text-anchor="middle" x="79" y="29">岳</text>
+<path d="M0 76Q25 64 50 70T100 68V100H0Z" fill="#2E5B53" opacity="0.55"></path>
+<polyline fill="none" points="20,74 20,30 50,58 80,30 80,74" stroke="#EAE5D9" stroke-linejoin="round" stroke-width="8"></polyline>
+<path d="M12 88Q28 82 44 88T76 88T96 86" opacity="0.85" stroke="#EAE5D9" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="50" cy="19" fill="#C0392B" r="7"></circle>
 </svg>
 <div class="ink-title-block">
 <span class="ink-brand-zh">MESL Cloud机场</span>
@@ -574,27 +586,27 @@
 </div>
 </a>
 <div class="ink-nav-toc">
-<a href="#strength">选购判断</a>
-<a href="#media">影音与AI</a>
-<a href="#plans">方案选型</a>
-<a href="#faq">常见问题</a>
+<a href="index.html#plans">行情三选</a>
+<a href="index.html#media">影音邮件</a>
+<a href="index.html#strength">行前四事</a>
+<a href="index.html#faq">答客问</a>
 <a href="chronicles.html">观澜文萃</a>
 </div>
-<a class="ink-cta-seal" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">
-<span>暮光推广页</span>
+<a class="ink-cta-seal" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow sponsored noopener" target="_blank">
+<span>注册选购</span>
 </a>
 </div>
 </nav>
 <article class="ink-manifesto">
 <section class="ink-hero">
 <span class="ink-seal-badge">学习与办公选购笔记</span>
-<h1 class="ink-hero-h1">MESL Cloud机场怎么选：<span>学习、办公、邮件与会议的核对笔记</span></h1>
+<h1 class="ink-hero-h1">MESL Cloud机场：<span>学习与办公选购笔记</span></h1>
 <p class="ink-hero-lead">读资料、开会议、收邮件，每一项对网络的要求都不同。先把你的日常任务写下来，再对照套餐页逐项问清楚。</p>
 <div class="ink-hero-actions">
-<a class="ink-btn-dark" href="#plans">先看套餐怎么核对</a>
-<a class="ink-btn-trial" href="#media">按现象排查影音与AI</a>
+<a class="ink-btn-dark" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow sponsored noopener" target="_blank">前往注册选购</a>
+<a class="ink-btn-trial" data-package-cta="" href="#plans">查看市场行情三选</a>
 </div>
-<p class="ink-hero-lead" style="font-size:0.9rem; margin-top:1rem; color:var(--ink-muted)">说明：本站是独立的推广与选购指南，不是 MESL Cloud 官方站点。购买按钮通向暮光加速的流程页面，属于推广合作，本站可能获得佣金；那里显示的套餐归暮光，不能直接当作 MESL Cloud 的报价。</p>
+<p class="ink-hero-lead" style="font-size:0.9rem; margin-top:1rem; color:var(--ink-muted)">说明：本站是独立的推广与选购指南，不是 MESL Cloud 官方站点。“前往注册选购”会打开站外的合作推广购买页，套餐、价格与结账都在那个页面完成，并非 MESL Cloud 自家的结账页；本站可能因此获得佣金。</p>
 <figure class="ink-silhouette">
 <svg fill="none" viewbox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 220L140 110L310 180L500 70L680 160L860 100L1000 220H0Z" fill="#EAE5D9" opacity="0.6"></path>
@@ -606,49 +618,40 @@
 </figure>
 </section>
 <div class="ink-sec-title-wrap" id="plans">
-<span class="ink-sec-tag">PLANS</span>
-<h2 class="ink-sec-title">套餐核对：学习、办公、共用三种情形</h2>
+<span class="ink-sec-tag">MARKET PRICES</span>
+<h2 class="ink-sec-title">行情三选：海外常见 VPN 订阅的公开标价</h2>
 </div>
-<p style="max-width:760px;margin:-1.2rem auto 2rem;color:var(--ink-slate);text-align:center">目前没有查到 MESL Cloud 自己的公开报价页，第三方页面上的数字新旧不一，所以这里不列价格。把下面三组问题带到你正在看的套餐页，逐条问清。</p>
+<p style="max-width:760px;margin:-1.2rem auto 2rem;color:var(--ink-slate);text-align:center">参考 Mullvad、Proton VPN 的海外 VPN 标价（2026-11-22 核实），产品与机场不同。这些不是 MESL Cloud 或合作方报价；下方按钮前往另一合作服务，购买前请核对实际套餐。</p><details class="currency-note" style="max-width:760px;margin:0 auto 24px;font-size:.85rem;line-height:1.7;color:var(--ink-slate);text-align:center;"><summary style="cursor:pointer">人民币折算与汇率说明</summary><p>人民币金额是按中国银行 2026-11-22 10:30 现汇卖出价（USD/CNY 6.6904，EUR/CNY 7.3464）折算的参考值，不含支付手续费，不是在售人民币报价，实际支付币种与金额以结算页为准。 <a href="https://www.boc.cn/sourcedb/whpj/" rel="nofollow noopener" target="_blank">汇率来源：中国银行外汇牌价 · 2026-11-22 10:30 ↗</a></p></details>
 <section class="ink-price-grid">
-<article class="ink-price-card">
-<h3 class="ink-tier-name">学习与资料查阅</h3>
-<p class="ink-tier-sub">论文库、课程回放、海外文档。</p>
-<ul class="ink-tier-specs">
-<li>每月需要的流量大致多少</li>
-<li>学校或图书馆网络下能否使用</li>
-<li>是否支持你常用的客户端</li>
-<li>到期后续费与退款条款在哪一页</li>
-</ul>
+<article class="ink-price-card" data-plan-slot="1">
+<span class="ink-mk-chip">外部市场参考 · 非合作方在售方案</span>
+<h3 class="ink-tier-name">Mullvad VPN</h3>
+<p class="ink-tier-sub">按月计价，时长不改单价</p>
+<p class="ink-mk-price"><small>约 </small>¥36.73<small> /月</small><span class="ink-mk-orig">原币标价：€5/月（含 VAT）</span></p>
+<ul class="ink-tier-specs"><li>价目页：1 个月、1 年、1 个十年均标每月 €5（约 ¥36.73）</li><li>最多 5 台设备</li><li>页面未标注流量上限</li></ul>
+<p class="ink-mk-source"><a href="https://mullvad.net/en/pricing" rel="nofollow noopener" target="_blank">来源：mullvad.net · 2026-11-22 核实 ↗</a></p>
+<a class="ink-btn-dark ink-card-btn" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow sponsored noopener" target="_blank">查看合作方案 ↗</a>
 </article>
-<article class="ink-price-card featured">
-<span class="ink-featured-stamp">办公常问</span>
-<h3 class="ink-tier-name">远程办公与会议</h3>
-<p class="ink-tier-sub">邮件、网盘、视频会议。</p>
-<ul class="ink-tier-specs">
-<li>会议时段是否有限速说明</li>
-<li>能否同时在电脑和手机登录</li>
-<li>单位有无接入规定需要先确认</li>
-<li>出现故障时的联系渠道与回复方式</li>
-<li>家庭网络瓶颈见<a href="high-availability-mesh-topology-case.html">Mesh 回程检查清单</a></li>
-</ul>
+<article class="ink-price-card" data-plan-slot="2">
+<span class="ink-mk-chip">外部市场参考 · 非合作方在售方案</span>
+<h3 class="ink-tier-name">Proton VPN Plus</h3>
+<p class="ink-tier-sub">12 个月计费的促销档</p>
+<p class="ink-mk-price"><small>约 </small>¥20.00<small> /月（12 个月计费）</small><span class="ink-mk-orig">原币标价：$2.99/月 · 首 12 个月合计 $35.88，之后每 12 个月 $83.88</span></p>
+<ul class="ink-tier-specs"><li>首 12 个月合计约 ¥240.05，之后每 12 个月续费约 ¥561.19（折合约 ¥46.77/月，自行折算）</li><li>最多 10 台设备</li><li>页面标注 30 天退款，并带有促销折扣，随时可能变化</li></ul>
+<p class="ink-mk-source"><a href="https://protonvpn.com/pricing" rel="nofollow noopener" target="_blank">来源：protonvpn.com · 2026-11-22 核实 ↗</a></p>
+<a class="ink-btn-dark ink-card-btn" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow sponsored noopener" target="_blank">查看合作方案 ↗</a>
 </article>
-<article class="ink-price-card">
-<h3 class="ink-tier-name">家人或小团队共用</h3>
-<p class="ink-tier-sub">多台设备，多个使用者。</p>
-<ul class="ink-tier-specs">
-<li>设备数与同时在线数分开问</li>
-<li>账号共享是否有条款限制</li>
-<li>电视盒子、路由器要不要另外配置</li>
-<li>流量用尽后能否加购</li>
-</ul>
+<article class="ink-price-card" data-plan-slot="3">
+<span class="ink-mk-chip">外部市场参考 · 非合作方在售方案</span>
+<h3 class="ink-tier-name">Proton VPN Free</h3>
+<p class="ink-tier-sub">免费档</p>
+<p class="ink-mk-price">¥0<small> /月</small><span class="ink-mk-orig">原币标价：$0.00/月</span></p>
+<ul class="ink-tier-specs"><li>最多 1 台设备</li><li>页面写明无数据量限制，速度档为 Medium</li><li>免费档不涉及付款，仅用于对照价格区间</li></ul>
+<p class="ink-mk-source"><a href="https://protonvpn.com/pricing" rel="nofollow noopener" target="_blank">来源：protonvpn.com · 2026-11-22 核实 ↗</a></p>
+<a class="ink-btn-dark ink-card-btn" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow sponsored noopener" target="_blank">查看合作方案 ↗</a>
 </article>
 </section>
-<div class="ink-test-card" style="max-width:760px;margin:-1rem auto 1.2rem;text-align:center">
-<p class="ink-test-quote"><strong>暮光推广页：</strong>下面的按钮会经合作推广链接打开暮光加速的流程页面，套餐、金额与条款以该页面显示为准，它们不是 MESL Cloud 的报价。确认页面上的品牌名称、周期和总价后再决定是否付款。</p>
-<p style="margin-top:1rem"><a class="ink-btn-dark" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank">前往暮光页面查看</a></p>
-</div>
-<p style="max-width:760px;margin:0 auto 3.5rem;color:var(--ink-slate);text-align:center">想先横向了解其他服务，可看<a href="https://dajichang.mom/">机场推荐与评测汇总</a>；每家只对照它自己的购买页。测速数字为何不同，见<a href="bgp-anycast-routing-redundancy-study.html">Anycast 与测速差异</a>。</p>
+<p style="max-width:760px;margin:0 auto 3.5rem;color:var(--ink-slate);text-align:center">读价的两个陷阱：Proton VPN Plus 的约 ¥20.00/月是首年促销折算，续年约 ¥561.19/12 个月（折合约 ¥46.77/月，自行折算）；Mullvad 不论买 1 个月还是 1 年都是每月 €5（约 ¥36.73）。学习和办公先确认续费价和设备数，而不是只看首月数字。想先横向了解其他服务，可看<a href="https://dajichang.mom/">机场推荐与评测汇总</a>；每家只对照它自己的购买页。</p>
 <div class="ink-sec-title-wrap" id="media">
 <span class="ink-sec-tag">BY SYMPTOM</span>
 <h2 class="ink-sec-title">影音、AI 与邮件：出现什么现象先查什么</h2>
@@ -657,22 +660,22 @@
 <div class="ink-stream-box">
 <span class="ink-stream-tag">影音</span>
 <h4>起播慢、缓冲、画质下降</h4>
-<p>三种现象对应不同位置：起播慢先看登录与地区提示，中途缓冲看持续速度，画质下降多半是播放器的自适应调整。同一内容在两台设备上各播一段，记下时间点。出现错误提示时，按<a href="financial-grade-transmission-protocols.html">连接阶段读懂错误</a>分步看。</p>
+<p>三种现象对应不同位置：起播慢先看登录与地区提示，中途缓冲看持续速度，画质下降多半是播放器的自适应调整。同一内容在两台设备上各播一段，记下时间点。能否观看还要看账号方案和平台规则。</p>
 </div>
 <div class="ink-stream-box">
 <span class="ink-stream-tag">AI</span>
 <h4>按阶段记录失败点</h4>
-<p>一次 AI 任务通常分登录、输入、生成、保存几个阶段，各阶段可能连接不同的服务地址，超时设置也不同。哪一步失败，就记下那一步、时间和提示原文，再换设备、换网络各试一次，用对照结果判断。遇到证书警告请读<a href="hybrid-cloud-data-sovereignty-privacy.html">证书错误怎么处理</a>。</p>
+<p>一次 AI 任务通常分登录、输入、生成、保存几个阶段，各阶段可能连接不同的服务地址，超时设置也不同。哪一步失败，就记下那一步、时间和提示原文，再换设备、换网络各试一次，用对照结果判断。</p>
 </div>
 <div class="ink-stream-box">
 <span class="ink-stream-tag">邮件</span>
 <h4>收不到、发不出、很迟才到</h4>
-<p>先分清是网络、客户端同步还是对方投递的问题：同一邮箱在网页端和客户端各看一次。方法见<a href="overseas-digital-workplace-connectivity.html">邮件迟迟收不到</a>。</p>
+<p>先分清是网络、客户端同步还是对方投递的问题：同一邮箱在网页端和客户端各看一次，记录收发时间差，再判断问题出在哪一环。</p>
 </div>
 </section>
 <div class="ink-sec-title-wrap" id="strength">
 <span class="ink-sec-tag">BEFORE YOU PAY</span>
-<h2 class="ink-sec-title">付款之前，先做这四件事</h2>
+<h2 class="ink-sec-title">行前四事：付款之前先做完</h2>
 </div>
 <section class="ink-pillars">
 <div class="ink-tablet">
@@ -714,13 +717,13 @@
 <polygon fill="#EAE5D9" points="12,6 15,12 12,18 9,12" stroke="#2E5B53" stroke-width="1.4"></polygon>
 </svg>
 </div>
-<h3>读一读工作使用核对</h3>
-<p>团队使用要把交付边界、责任和费用问清，见<a href="mesl-cloud-enterprise-reliability-audit.html">工作使用核对文章</a>。</p>
+<h3>读清续费与退款</h3>
+<p>续费价是否与首单一致、流量是否按月清零、退款写在哪一页，都要在下单页找到原文，没写明就当作没有承诺。</p>
 </div>
 </section>
 <div class="ink-sec-title-wrap">
 <span class="ink-sec-tag">YOUR LOG</span>
-<h2 class="ink-sec-title">使用记录：怎么写才有参考价值</h2>
+<h2 class="ink-sec-title">使用笔记：怎么写才有参考价值</h2>
 </div>
 <p style="max-width:760px;margin:-1.2rem auto 2rem;color:var(--ink-slate);text-align:center">目前还没有可引用的 MESL Cloud 使用记录。自己评估时，建议每条写清：日期、设备、所用网络、做了什么、哪一步出问题、后来怎么处理。</p>
 <section class="ink-testimonials-grid">
@@ -730,7 +733,7 @@
 </section>
 <div class="ink-sec-title-wrap" id="faq">
 <span class="ink-sec-tag">FAQ</span>
-<h2 class="ink-sec-title">常见问题</h2>
+<h2 class="ink-sec-title">答客问</h2>
 </div>
 <section class="ink-faq-frame">
 <div class="ink-faq-item">
@@ -738,8 +741,8 @@
 <p>不是。这是独立的推广与选购指南，官方信息请以 MESL Cloud 自己公布的渠道为准。</p>
 </div>
 <div class="ink-faq-item">
-<h4>“前往暮光页面查看”会到哪里？</h4>
-<p>会经合作推广链接打开暮光加速的流程页面，套餐与价格属于暮光。请先确认品牌、周期与总价，再决定是否付款；与预期不符就关闭页面。</p>
+<h4>点“注册选购”会到哪里？</h4>
+<p>会打开站外的合作推广购买页，套餐与价格由那个页面显示，并非 MESL Cloud 自家的结账页。请先确认品牌、周期与总价，再决定是否付款；与预期不符就关闭页面。</p>
 </div>
 <div class="ink-faq-item">
 <h4>能保证开会不掉线吗？</h4>

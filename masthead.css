@@ -1,0 +1,91 @@
+/* shared masthead: same navigation on every page */
+/* Masthead Navigation */
+    .ink-masthead {
+      border-bottom: 1px solid var(--ink-border);
+      padding: 1.1rem 2rem;
+      background: rgba(245, 242, 235, 0.98);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .ink-nav-frame {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Integrated Logo: Mountain Peaks & Vermilion Seal Stamp */
+    .ink-emblem-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+    .ink-logo-svg {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+    .ink-title-block {
+      display: flex;
+      flex-direction: column;
+    }
+    .ink-brand-zh {
+      font-family: var(--ink-font);
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      color: var(--ink-black);
+      line-height: 1.1;
+    }
+    .ink-brand-en {
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: var(--ink-vermilion);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-family: var(--ink-sans);
+    }
+
+    .ink-nav-toc {
+      display: flex;
+      gap: 2rem;
+      font-size: 0.92rem;
+      font-family: var(--ink-font);
+      letter-spacing: 0.08em;
+    }
+    .ink-nav-toc a:hover {
+      color: var(--ink-vermilion);
+    }
+
+    .ink-cta-seal,
+    .ink-cta-seal:visited {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--ink-vermilion);
+      color: var(--ink-vermilion) !important;
+      padding: 0.5rem 1.3rem;
+      font-family: var(--ink-font);
+      font-size: 0.88rem;
+      letter-spacing: 0.1em;
+      background: transparent;
+      transition: all 0.2s ease;
+      min-height: 44px;
+    }
+    .ink-cta-seal:hover {
+      background: var(--ink-vermilion);
+      color: #ffffff !important;
+    }
+
+    
+@media (max-width: 900px) {
+  .ink-masthead { padding: 0.5rem 1rem; position: static; }
+  .ink-nav-frame { flex-wrap: wrap; gap: 0.75rem 0.5rem; }
+  .ink-emblem-wrap { order: 1; }
+  .ink-cta-seal { order: 2; padding: 0.3rem 0.7rem; font-size: 0.78rem; min-height: 34px; }
+  .ink-nav-toc { order: 3; display: flex; width: 100%; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; gap: 0.6rem; padding: 0.4rem 0 0.1rem; border-top: 1px solid var(--ink-border); scrollbar-width: none; }
+  .ink-nav-toc::-webkit-scrollbar { display: none; }
+  .ink-nav-toc a { padding: 0.35rem 0.75rem; font-size: 0.82rem; background: var(--ink-paper-dark); border: 1px solid var(--ink-border); flex-shrink: 0; }
+}
